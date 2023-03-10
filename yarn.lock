@@ -8544,10 +8544,8 @@ jest@26.6.0:
     import-local "^3.0.2"
     jest-cli "^26.6.0"
 
-js-slang@^1.0.15:
-  version "1.0.15"
-  resolved "https://registry.yarnpkg.com/js-slang/-/js-slang-1.0.15.tgz#cc7d1c240d1e9c145b8e2a7ed8dc074c89ee68d5"
-  integrity sha512-wb8zuEU4h3bvBg4MQYC7xLAwBX269hlNnwm8BoVMT2vjV3+GjkTTWzFjc1wfu2Agbl62Ez4sQr1KOtZ8Cgqk4w==
+"js-slang@file:../js-slang":
+  version "1.0.14"
   dependencies:
     "@babel/parser" "^7.19.4"
     "@joeychenofficial/alt-ergo-modified" "^2.4.0"

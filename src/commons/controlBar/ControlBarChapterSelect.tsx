@@ -8,6 +8,7 @@ import {
   defaultLanguages,
   fullJSLanguage,
   htmlLanguage,
+  pythonLanguage,
   SALanguage,
   sourceLanguages,
   styliseSublanguage,
@@ -32,11 +33,13 @@ const chapterListRenderer: ItemListRenderer<SALanguage> = ({ itemsParentRef, ren
   const variantChoices = variantLanguages.map(renderItem);
   const fullJSChoice = renderItem(fullJSLanguage, 0);
   const htmlChoice = renderItem(htmlLanguage, 0);
+  const pythonChoice = renderItem(pythonLanguage, 0);
   return (
     <Menu ulRef={itemsParentRef}>
       {defaultChoices}
       {Constants.playgroundOnly && fullJSChoice}
       {Constants.playgroundOnly && htmlChoice}
+      {Constants.playgroundOnly && pythonChoice}
       <MenuItem key="variant-menu" text="Variants" icon="cog">
         {variantChoices}
       </MenuItem>

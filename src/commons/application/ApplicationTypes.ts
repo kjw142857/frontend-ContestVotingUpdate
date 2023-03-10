@@ -134,12 +134,20 @@ export const htmlLanguage: SALanguage = {
   displayName: 'HTML'
 };
 
+export const pythonLanguage: SALanguage = {
+  chapter: Chapter.PYTHON_1,
+  variant: Variant.DEFAULT,
+  displayName: 'Python S1'
+};
+
 export const styliseSublanguage = (chapter: Chapter, variant: Variant = Variant.DEFAULT) => {
   switch (chapter) {
     case Chapter.FULL_JS:
       return fullJSLanguage.displayName;
     case Chapter.HTML:
       return htmlLanguage.displayName;
+    case Chapter.PYTHON_1:
+      return pythonLanguage.displayName;
     default:
       return `Source \xa7${chapter}${
         variantDisplay.has(variant) ? ` ${variantDisplay.get(variant)}` : ''
