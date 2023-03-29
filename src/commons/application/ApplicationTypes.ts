@@ -293,6 +293,10 @@ export const defaultWorkspaceManager: WorkspaceManagerState = {
   },
   grading: {
     ...createDefaultWorkspace('grading'),
+    submissionsTableFilters: {
+      columnFilters: [],
+      globalFilter: null
+    },
     currentSubmission: undefined,
     currentQuestion: undefined,
     hasUnsavedChanges: false
